@@ -26,52 +26,6 @@ a {
   }
 }
 
-html {
-  font-size: 16px;
-  font-family: "Inter", sans-serif;
-  line-height: 1.25;
-}
-
-body {
-  border-top: 3rem solid #571fff;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  margin-bottom: 0.5rem;
-  display: grid;
-  place-content: center;
-}
-
-.title {
-  margin-bottom: -1rem;
-}
-
-.sub-title {
-  color: var(--accent-color);
-}
-
-.information,
-.experience,
-.formation,
-.languages {
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 0.5rem;
-  max-width: 1280px;
-}
-
-.contact {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.icon {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
 .text-xxl {
   font-size: 2rem;
 }
@@ -88,6 +42,51 @@ body {
   font-size: 1rem;
 }
 
+html {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  line-height: 1.25;
+  scroll-behavior: smooth;
+}
+
+body {
+  border-top: 3rem solid #571fff;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.responsive-container {
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: clamp(0.5rem, 1vw, 1rem);
+}
+
+.information,
+#main-content,
+.experience,
+.formation,
+.languages {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title {
+  margin-bottom: -1rem;
+}
+
+.sub-title {
+  color: var(--accent-color);
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
 .contact-link {
   display: flex;
   align-items: center;
@@ -98,13 +97,6 @@ body {
 .contact-link:hover {
   transform: scale(1.1) translateX(1.25rem);
   transition: transform 0.2s ease-in-out;
-}
-
-.job-info,
-.formation-info {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
 }
 
 .bullets {
@@ -125,4 +117,16 @@ body {
 
 .bullet-item strong {
   color: var(--accent-color);
+}
+
+.footer {
+  background-color: #571fff;
+  padding: 1rem 0.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.footer a {
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid var(--text-color);
 }
