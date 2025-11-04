@@ -23,4 +23,7 @@ Este proyecto es un currículum desarrollado con **HTML** y **CSS**, diseñado c
 1. Clona este repositorio en tu máquina local.
 2. Abre el archivo `index.html` en tu navegador preferido.
 
-¡Gracias por visitar mi currículum!
+## Capturas de pantalla
+
+![Vista previa del currículum - Parte 1](assets/mobile-preview.png)
+![Vista previa del currículum - Parte 2](assets/desktop-preview.png)
