@@ -64,6 +64,12 @@ body {
   padding: clamp(0.5rem, 1vw, 1rem);
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .information,
 #main-content,
 .experience,
