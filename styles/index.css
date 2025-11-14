@@ -15,14 +15,16 @@ a {
 :root {
   --bg-color: #f9f8ff;
   --text-color: #080020;
-  --accent-color: #4000ff;
+  --primary-color: #4000ff;
+  --on-primary-color: #f9f8ff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #121026;
     --text-color: #e0e0ff;
-    --accent-color: #7e53ff;
+    --primary-color: #8861ff;
+    --on-primary-color: #f9f8ff;
   }
 }
 
@@ -85,7 +87,7 @@ body {
 }
 
 .sub-title {
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 
 .icon {
@@ -118,11 +120,11 @@ body {
 }
 
 .bullet-item strong {
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 
 .bullet-item strong {
-  color: var(--accent-color);
+  color: var(--primary-color);
 }
 
 .footer {
@@ -135,4 +137,5 @@ body {
 .footer a {
   padding-bottom: 0.25rem;
   border-bottom: 2px solid var(--text-color);
+  color: var(--on-primary-color);
 }
